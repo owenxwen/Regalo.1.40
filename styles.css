@@ -496,7 +496,7 @@ body {
     transform: translateX(-50%);
     font-family: 'Pacifico', cursive;
     font-size: 40px;
-    color: #ff4d6d; 
+    color: #ffb347; 
     user-select: none;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
     animation: flotar 2s ease-in-out infinite,
@@ -581,10 +581,10 @@ body {
 
 @keyframes brillo {
   from, to {
-    text-shadow: 0 0 3px #fff, 0 0 6px #ff4d6d, 0 0 9px #ff4d6d;
+    text-shadow: 0 0 3px #fff, 0 0 6px #ffb347, 0 0 9px #ffb347;
   }
   50% {
-    text-shadow: 0 0 6px #fff, 0 0 12px #ff4d6d, 0 0 18px #ff4d6d;
+    text-shadow: 0 0 6px #fff, 0 0 12px #ffb347, 0 0 18px #ffb347;
   }
 }
 
