@@ -1,9 +1,9 @@
 html {
-  overflow: hidden; 
+  overflow-y: auto; 
 }
 
 body {
-  background-color: rgba(255, 182, 193, 1);
+  background-color: rgba(240, 255, 240, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -547,13 +547,13 @@ body {
 
 /*Carta*/
 .carta {
-  background: linear-gradient(135deg, #ffeeee, #fbd5e4);
+  background: linear-gradient(135deg, #fff5e6, #ffe0b2);
   padding: 32px;
   width: 400px;
   max-width: 80%;
   border-radius: 12px;
-  border: 3px solid #ffb6c1; 
-  box-shadow: 0 0 25px rgba(255, 182, 193, 0.6);
+  border: 3px solid #ffb347;
+  box-shadow: 0 0 25px rgba(255, 179, 71, 0.6);
   font-family: 'Georgia', serif;
   position: relative;
   animation: aparecer 0.8s ease;
@@ -562,7 +562,7 @@ body {
 .carta h2 {
   font-family: cursive;
   font-size: 28px;
-  color: #fd7e91; 
+  color: #ff9d3d; 
   margin-bottom: 16px;
   text-align: center;
 }

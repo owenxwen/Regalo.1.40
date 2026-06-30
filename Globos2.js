@@ -6,14 +6,14 @@ window.oncontextmenu = function () {
 
 window.addEventListener("resize", () => {
   ancho4 = canvasGlobos2.width = window.innerWidth;
-  alto4 = canvasGlobos2.height = window.innerHeight;
+  alto4 = canvasGlobos2.height = document.body.scrollHeight;
 });
 
 const canvasGlobos2 = document.getElementById("canvas4");
 const ctxGlobos2 = canvasGlobos2.getContext("2d");
 
 let ancho4 = (canvasGlobos2.width = window.innerWidth);
-let alto4 = (canvasGlobos2.height = window.innerHeight);
+let alto4 = (canvasGlobos2.height = document.body.scrollHeight);
 
 let globos2 = [];
 

@@ -8,14 +8,14 @@ window.oncontextmenu = function () {
 
 window.addEventListener("resize", () => {
   ancho = canvasConfeti.width = window.innerWidth;
-  alto = canvasConfeti.height = window.innerHeight;
+  alto = canvasConfeti.height = document.body.scrollHeight;
 });
 
 const canvasConfeti = document.getElementById("canvas1"); //Lienzo
 const ctxConfeti = canvasConfeti.getContext("2d"); // Funciones
 
 let ancho = (canvasConfeti.width = window.innerWidth);
-let alto = (canvasConfeti.height = window.innerHeight);
+let alto = (canvasConfeti.height = document.body.scrollHeight);
 
 let confetis = [];
 

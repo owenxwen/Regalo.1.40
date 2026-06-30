@@ -6,14 +6,15 @@ window.oncontextmenu = function () {
 
 window.addEventListener("resize", () => {
   ancho2 = canvasConfeti2.width = window.innerWidth;
-  alto2 = canvasConfeti2.height = window.innerHeight;
+  alto2 = canvasConfeti2.height = document.body.scrollHeight;
 });
 
 const canvasConfeti2 = document.getElementById("canvas2");
 const ctxConfeti2 = canvasConfeti2.getContext("2d");
 
 let ancho2 = (canvasConfeti2.width = window.innerWidth);
-let alto2 = (canvasConfeti2.height = window.innerHeight);
+let alto2 = (canvasConfeti2.height = document.body.scrollHeight);
+
 
 let confetis2 = [];
 
