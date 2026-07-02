@@ -97,6 +97,16 @@
   margin: 0 auto; /* Centrar horizontalmente */
 }
 
+/* Banderetas mobile */
+.bandereta {
+  width: 20px;
+  height: 28px;
+}
+
+.cuerda {
+  top: 14px;
+}
+
 /* Nuevo media query para pantallas más pequeñas */
 @media only screen and (max-width: 400px) {
 
@@ -148,4 +158,5 @@
     transform: scale(0.7);
   }
 }
+
 

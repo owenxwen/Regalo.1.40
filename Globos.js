@@ -96,6 +96,19 @@ function animarGlobos() {
   requestAnimationFrame(animarGlobos);
 }
 
+canvasGlobos.addEventListener("click", (e) => {
+  const rect = canvasGlobos.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+  const clickY = e.clientY - rect.top;
+
+  globos = globos.filter((g) => {
+    const dx = clickX - g.x;
+    const dy = clickY - g.y;
+    const distancia = Math.sqrt(dx * dx + dy * dy);
+    return distancia > g.radioX;
+  });
+});
+
 crearGlobos();
 setTimeout(() => {
   animarGlobos();

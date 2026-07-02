@@ -16,6 +16,7 @@ let ancho4 = (canvasGlobos2.width = window.innerWidth);
 let alto4 = (canvasGlobos2.height = document.body.scrollHeight);
 
 let globos2 = [];
+let explosiones = [];
 
 const coloresGlobos2 = [
   "rgba(255, 179, 71, 1)",
@@ -28,7 +29,7 @@ const coloresGlobos2 = [
 ];
 
 function crearGlobos2() {
-  const cantidad = 15;
+  const cantidad = 40;
   for (let i = 0; i < cantidad; i++) {
     globos2.push({
       x: Math.random() * ancho4,
@@ -93,8 +94,59 @@ function animarGlobos2() {
     }
   }
 
+  explosiones = explosiones.filter((exp) => {
+    exp.particulas.forEach((p) => {
+      p.x = (p.x || exp.x) + Math.cos(p.angulo) * p.velocidad;
+      p.y = (p.y || exp.y) + Math.sin(p.angulo) * p.velocidad;
+      p.alpha -= 0.05;
+
+      ctxGlobos2.beginPath();
+      ctxGlobos2.arc(p.x, p.y, p.radio, 0, Math.PI * 2);
+      ctxGlobos2.fillStyle = exp.color.replace("1)", `${p.alpha})`);
+      ctxGlobos2.fill();
+    });
+
+    return exp.particulas.some((p) => p.alpha > 0);
+  });
+
   requestAnimationFrame(animarGlobos2);
 }
+
+canvasGlobos2.addEventListener("click", (e) => {
+  const rect = canvasGlobos2.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+  const clickY = e.clientY - rect.top;
+
+  let exploto = false;
+
+  globos2 = globos2.filter((g) => {
+    const dx = clickX - g.x;
+    const dy = clickY - g.y;
+    const distancia = Math.sqrt(dx * dx + dy * dy);
+    if (distancia <= g.radioX) {
+      exploto = true;
+      explosiones.push({
+        x: g.x,
+        y: g.y,
+        color: g.color,
+        particulas: Array.from({ length: 8 }, () => ({
+          angulo: Math.random() * Math.PI * 2,
+          velocidad: Math.random() * 4 + 2,
+          radio: Math.random() * 5 + 3,
+          alpha: 1,
+        })),
+      });
+      return false;
+    }
+    return true;
+  });
+
+  if (!exploto) {
+    canvasGlobos2.style.pointerEvents = "none";
+    document.elementFromPoint(e.clientX, e.clientY).click();
+    canvasGlobos2.style.pointerEvents = "auto";
+  }
+});
 
 crearGlobos2();
 setTimeout(() => {
