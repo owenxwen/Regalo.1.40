@@ -1,5 +1,6 @@
 html {
-  overflow-y: auto; 
+  overflow-y: auto;
+  overflow-x: hidden; 
 }
 
 body {
@@ -722,13 +723,13 @@ body {
 }
 
 /* Colores alternando naranja y verde */
-.b1  { background-color: rgba(255, 179, 71, 1);  left: 2%; top: 5px; left: 0%; }
-.b2  { background-color: rgba(200, 230, 180, 1); left: 12%; top: 15px; left: 8%; }
-.b3  { background-color: rgba(255, 210, 140, 1); left: 22%; top: 28px; left: 16%; }
-.b4  { background-color: rgba(150, 200, 130, 1); left: 32%; top: 38px; left: 24%; }
-.b5  { background-color: rgba(255, 179, 71, 1);  left: 42%; top: 30px; left: 32%; }
-.b6  { background-color: rgba(200, 230, 180, 1); left: 52%; top: 30px; right: 32%; }
-.b7  { background-color: rgba(255, 210, 140, 1); left: 62%; top: 38px; right: 24%; }
-.b8  { background-color: rgba(150, 200, 130, 1); left: 72%; top: 28px; right: 16%; }
-.b9  { background-color: rgba(255, 179, 71, 1);  left: 82%; top: 15px; right: 8%; }
-.b10 { background-color: rgba(200, 230, 180, 1); left: 92%; top: 5px; right: 0%; } 
+.b1  { background-color: rgba(255, 179, 71, 1);  left: 0%;   top: 68px; transform: rotate(-5deg); }
+.b2  { background-color: rgba(200, 230, 180, 1); left: 10%;  top: 59px; transform: rotate(-5deg); }
+.b3  { background-color: rgba(255, 210, 140, 1); left: 20%;  top: 47px; transform: rotate(-7deg); }
+.b4  { background-color: rgba(150, 200, 130, 1); left: 30%;  top: 33px; transform: rotate(-9deg); }
+.b5  { background-color: rgba(255, 179, 71, 1);  left: 40%;  top: 15px; transform: rotate(-10deg); }
+.b6  { background-color: rgba(200, 230, 180, 1); left: 50%;  top: 2px; transform: rotate(11deg); }
+.b7  { background-color: rgba(255, 210, 140, 1); right: 40%; top: 15px; transform: rotate(11deg); }
+.b8  { background-color: rgba(150, 200, 130, 1); right: 30%; top: 33px; transform: rotate(9deg); }
+.b9  { background-color: rgba(255, 179, 71, 1);  right: 20%; top: 47px; transform: rotate(7deg); }
+.b10 { background-color: rgba(200, 230, 180, 1); right: 10%; top: 58px; transform: rotate(6deg); }
