@@ -733,3 +733,7 @@ body {
 .b8  { background-color: rgba(150, 200, 130, 1); right: 30%; top: 33px; transform: rotate(9deg); }
 .b9  { background-color: rgba(255, 179, 71, 1);  right: 20%; top: 47px; transform: rotate(7deg); }
 .b10 { background-color: rgba(200, 230, 180, 1); right: 10%; top: 58px; transform: rotate(6deg); }
+
+:root {
+  color-scheme: only light;
+}
