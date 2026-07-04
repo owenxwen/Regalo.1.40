@@ -66,6 +66,11 @@
     bottom: 77px;
     left: 159px;
   }
+
+  .happy-birthday {
+    top: -60%;
+    left: 120px;
+  }
 }
 
 /* Celular Horizontal */
@@ -96,6 +101,10 @@
   .foto-2, .foto-4, .foto-6, .foto-8 {
     right: 20px;
   }
+
+  .polaroid {
+  padding: 7px 7px 25px 7px;
+  }
 }
 
 .llama {
@@ -122,15 +131,20 @@
   height: 100px;
 }
 
-.foto-1 { left: 80px;  top: 50px; }
-.foto-2 { right: 80px; top: 200px; }
-.foto-3 { left: 80px;  top: 350px; }
-.foto-4 { right: 80px; top: 500px; }
-.foto-5 { left: 80px;  top: 650px; }
-.foto-6 { right: 80px; top: 800px; }
-.foto-7 { left: 80px;  top: 950px; }
-.foto-8 { right: 80px; top: 1100px; }
-.foto-9 { left: 80px;  top: 1250px; }
+/* Polaroid mobile */
+.polaroid {
+  padding: 6px 6px 20px 6px;
+}
+
+.foto-1 { left: 80px;  top: 150px; }
+.foto-2 { right: 80px; top: 300px; }
+.foto-3 { left: 80px;  top: 450px; }
+.foto-4 { right: 80px; top: 600px; }
+.foto-5 { left: 80px;  top: 750px; }
+.foto-6 { right: 80px; top: 900px; }
+.foto-7 { left: 80px;  top: 1050px; }
+.foto-8 { right: 80px; top: 1200px; }
+.foto-9 { left: 80px;  top: 1350px; }
 
 /* Pantallas más pequeñas */
 @media only screen and (max-width: 400px) {
@@ -182,4 +196,10 @@
   .carta {
     transform: scale(0.7);
   }
+
+  .happy-birthday {
+    top: -80%;
+    left: 130px;
+  }
 }
+
