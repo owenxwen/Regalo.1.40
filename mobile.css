@@ -105,6 +105,17 @@
   }
 }
 
+@media only screen and (min-width: 720px) and (max-width: 1280px) and (orientation: landscape) {
+    .migas-canvas {
+    position: absolute;
+    width: 520px;
+    height: 100px;
+    bottom: 24%;
+    pointer-events: none;
+    z-index: 3;
+  }
+}
+
 @media only screen and (min-width: 400px) and (max-width: 768px) and (orientation: portrait) {
   .vela-overlay {
     transform: scale(0.75);
