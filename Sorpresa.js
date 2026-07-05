@@ -10,6 +10,7 @@ cancion2.loop = true;
 const sonidoVela = new Audio("recursos/vela.mp3");
 const sonidoMordisco = new Audio("recursos/mordisco.mp3");
 
+
 regalo.addEventListener("click", () => {
   modalCarta.classList.add("activo");
   const popRegalo = sonidoRegalo.cloneNode();
@@ -81,19 +82,23 @@ tortaWrapper.addEventListener("click", () => {
   } else if (clicksPastel === 2) {
     tortaWrapper.style.clipPath = "inset(0 0 0 25%)";
     crearMigas(15);
-    sonidoMordisco.play();
+    const mordisco = sonidoMordisco.cloneNode();
+    mordisco.play();
   } else if (clicksPastel === 3) {
     tortaWrapper.style.clipPath = "inset(0 0 0 50%)";
     crearMigas(20);
-    sonidoMordisco.play();
+    const mordisco = sonidoMordisco.cloneNode();
+    mordisco.play();
   } else if (clicksPastel === 4) {
     tortaWrapper.style.clipPath = "inset(0 0 0 75%)";
     crearMigas(25);
-    sonidoMordisco.play();
+    const mordisco = sonidoMordisco.cloneNode();
+    mordisco.play();
   } else if (clicksPastel === 5) {
     tortaWrapper.style.clipPath = "inset(0 0 0 100%)";
     crearMigas(30);
-    sonidoMordisco.play();
+    const mordisco = sonidoMordisco.cloneNode();
+    mordisco.play();
   }
 });
 
