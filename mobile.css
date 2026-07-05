@@ -28,6 +28,15 @@
   left: 85px;
 }
 
+.migas-canvas {
+  position: absolute;
+  width: 520px;
+  height: 100px;
+  bottom: 30%;
+  pointer-events: none;
+  z-index: 3;
+}
+
 /*Mensaje*/
 .happy-birthday {
   top: -100%;
@@ -75,6 +84,16 @@
     top: -90%;
     left: 140px;
   }
+
+  .migas-canvas {
+    position: absolute;
+    width: 520px;
+    height: 100px;
+    bottom: 30%;
+    pointer-events: none;
+    z-index: 3;
+  }
+
 }
 
 /* Celular Horizontal */
@@ -113,6 +132,16 @@
   .torta-wrapper {
   clip-path: inset(0 0 0 0%);
   }
+
+  .migas-canvas {
+    position: absolute;
+    width: 520px;
+    height: 100px;
+    bottom: 30%;
+    pointer-events: none;
+    z-index: 3;
+  }
+
 
 }
 
@@ -214,5 +243,15 @@
     top: -80%;
     left: 155px;
   }
+
+  .migas-canvas {
+    position: absolute;
+    width: 520px;
+    height: 100px;
+    bottom: 30%;
+    pointer-events: none;
+    z-index: 3;
+  }
+
 }
 
