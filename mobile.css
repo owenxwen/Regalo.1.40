@@ -32,7 +32,7 @@
   position: absolute;
   width: 520px;
   height: 100px;
-  bottom: 30%;
+  bottom: -12px;
   pointer-events: none;
   z-index: 3;
 }
@@ -105,7 +105,20 @@
   }
 }
 
+/* tablet Horizontal */
 @media only screen and (min-width: 720px) and (max-width: 1280px) and (orientation: landscape) {
+    .migas-canvas {
+    position: absolute;
+    width: 520px;
+    height: 100px;
+    bottom: 25%;
+    pointer-events: none;
+    z-index: 3;
+  }
+}
+
+/* tablet vertical */
+@media only screen and (min-width: 720px) and (max-width: 1280px) and (orientation: portrait) {
     .migas-canvas {
     position: absolute;
     width: 520px;
