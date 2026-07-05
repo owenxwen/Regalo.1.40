@@ -28,15 +28,6 @@
   left: 85px;
 }
 
-.migas-canvas {
-  position: absolute;
-  width: 520px;
-  height: 100px;
-  bottom: -12px;
-  pointer-events: none;
-  z-index: 3;
-}
-
 /*Mensaje*/
 .happy-birthday {
   top: -100%;
@@ -51,6 +42,12 @@
 }
 
 .torta {
+  transform: scale(0.75);
+  left: 15px;
+  bottom: -20px;
+}
+
+.migas-canvas {
   transform: scale(0.75);
   left: 15px;
   bottom: -20px;
@@ -84,16 +81,6 @@
     top: -90%;
     left: 140px;
   }
-
-  .migas-canvas {
-    position: absolute;
-    width: 520px;
-    height: 100px;
-    bottom: 30%;
-    pointer-events: none;
-    z-index: 3;
-  }
-
 }
 
 /* Celular Horizontal */
@@ -102,30 +89,6 @@
     transform: scale(0.75);
     bottom: 99px;
     left: 145px;
-  }
-}
-
-/* tablet Horizontal */
-@media only screen and (min-width: 720px) and (max-width: 1280px) and (orientation: landscape) {
-    .migas-canvas {
-    position: absolute;
-    width: 520px;
-    height: 100px;
-    bottom: 25%;
-    pointer-events: none;
-    z-index: 3;
-  }
-}
-
-/* tablet vertical */
-@media only screen and (min-width: 720px) and (max-width: 1280px) and (orientation: portrait) {
-    .migas-canvas {
-    position: absolute;
-    width: 520px;
-    height: 100px;
-    bottom: 50%;
-    pointer-events: none;
-    z-index: 3;
   }
 }
 
@@ -156,16 +119,6 @@
   .torta-wrapper {
   clip-path: inset(0 0 0 0%);
   }
-
-  .migas-canvas {
-    position: absolute;
-    width: 520px;
-    height: 100px;
-    bottom: 24%;
-    pointer-events: none;
-    z-index: 3;
-  }
-
 
 }
 
@@ -238,6 +191,12 @@
     bottom: -27px;
   }
 
+  .migas-canvas{
+    transform: scale(0.63);
+    left: 17px;
+    bottom: -16px;
+  }
+
   .torta-wrapper {
   clip-path: inset(0 0 0 0%);
   }
@@ -267,15 +226,5 @@
     top: -80%;
     left: 155px;
   }
-
-  .migas-canvas {
-    position: absolute;
-    width: 520px;
-    height: 100px;
-    bottom: 24%;
-    pointer-events: none;
-    z-index: 3;
-  }
-
 }
 

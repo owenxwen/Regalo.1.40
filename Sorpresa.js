@@ -10,7 +10,6 @@ cancion2.loop = true;
 const sonidoVela = new Audio("recursos/vela.mp3");
 const sonidoMordisco = new Audio("recursos/mordisco.mp3");
 
-
 regalo.addEventListener("click", () => {
   modalCarta.classList.add("activo");
   const popRegalo = sonidoRegalo.cloneNode();
@@ -103,29 +102,17 @@ tortaWrapper.addEventListener("click", () => {
 });
 
 const migasCanvas = document.querySelector(".migas-canvas");
+migasCanvas.width = 520;
+migasCanvas.height = 100;
 const ctxMigas = migasCanvas.getContext("2d");
 let migas = [];
-
-function ajustarMigasCanvas() {
-  const tortaRect = tortaWrapper.getBoundingClientRect();
-  const soporteRect = document.querySelector(".soporte").getBoundingClientRect();
-  
-  migasCanvas.style.position = "fixed";
-  migasCanvas.style.left = tortaRect.left + "px";
-  migasCanvas.style.top = tortaRect.top + "px";
-  migasCanvas.width = tortaRect.width;
-  migasCanvas.height = soporteRect.bottom - tortaRect.top;
-}
-
-ajustarMigasCanvas();
-window.addEventListener("resize", ajustarMigasCanvas);
 
 const coloresMigas = ["#FDE8C8", "#ff9393", "#ff5959", "#FDE8C8"];
 
 function crearMigas(cantidad) {
   for (let i = 0; i < cantidad; i++) {
     migas.push({
-      x: Math.random() * migasCanvas.width,
+      x: Math.random() * 274 + 120, // ancho del pastel
       y: 0,
       r: Math.random() * 4 + 2,
       color: coloresMigas[Math.floor(Math.random() * coloresMigas.length)],
@@ -149,8 +136,8 @@ function animarMigas() {
       m.y += m.velocidadY;
       m.x += m.velocidadX;
 
-      if (m.y >= migasCanvas.height - 5) {
-        m.y = migasCanvas.height - 5;
+      if (m.y >= 90) {
+        m.y = 90;
         m.rebotando = false;
       }
     }
