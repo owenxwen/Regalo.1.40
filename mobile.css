@@ -47,6 +47,10 @@
   bottom: -20px;
 }
 
+.torta-wrapper {
+  clip-path: inset(0 0 0 0%);
+}
+
 .caja {
   transform: scale(0.75);
   left: -65px;
@@ -105,6 +109,11 @@
   .polaroid {
   padding: 7px 7px 25px 7px;
   }
+
+  .torta-wrapper {
+  clip-path: inset(0 0 0 0%);
+  }
+
 }
 
 .llama {
@@ -174,6 +183,10 @@
     transform: scale(0.63);
     left: 17px;
     bottom: -27px;
+  }
+
+  .torta-wrapper {
+  clip-path: inset(0 0 0 0%);
   }
 
   .caja {

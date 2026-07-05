@@ -148,6 +148,25 @@ body {
   height: 40px;
 }
 
+.torta-wrapper {
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  clip-path: inset(0 0 0 0%);
+  transition: clip-path 0.4s ease;
+}
+
+.migas-canvas {
+  position: absolute;
+  width: 520px;
+  height: 100px;
+  bottom: 24%;
+  pointer-events: none;
+  z-index: 3;
+}
+
 .chocolate {
   position: absolute;
   background-color: #ff5959;
