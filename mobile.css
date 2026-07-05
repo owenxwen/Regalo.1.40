@@ -248,7 +248,7 @@
     position: absolute;
     width: 520px;
     height: 100px;
-    bottom: 30%;
+    bottom: 24%;
     pointer-events: none;
     z-index: 3;
   }
