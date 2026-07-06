@@ -134,6 +134,10 @@
   height: 28px;
 }
 
+.galeria-marcos {
+  height: 500px;
+}
+
 /* Marcos grandes mobile */
 .marco-grande {
   width: 100px;
