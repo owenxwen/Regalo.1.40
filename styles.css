@@ -158,15 +158,6 @@ body {
   transition: clip-path 0.4s ease;
 }
 
-.migas-canvas {
-  position: absolute;
-  width: 520px;
-  height: 100px;
-  bottom: 220px;
-  pointer-events: none;
-  z-index: 3;
-}
-
 .chocolate {
   position: absolute;
   background-color: #ff5959;

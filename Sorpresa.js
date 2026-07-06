@@ -80,70 +80,19 @@ tortaWrapper.addEventListener("click", () => {
     sonidoVela.play();
   } else if (clicksPastel === 2) {
     tortaWrapper.style.clipPath = "inset(0 0 0 25%)";
-    crearMigas(15);
     const mordisco = sonidoMordisco.cloneNode();
     mordisco.play();
   } else if (clicksPastel === 3) {
     tortaWrapper.style.clipPath = "inset(0 0 0 50%)";
-    crearMigas(20);
     const mordisco = sonidoMordisco.cloneNode();
     mordisco.play();
   } else if (clicksPastel === 4) {
     tortaWrapper.style.clipPath = "inset(0 0 0 75%)";
-    crearMigas(25);
     const mordisco = sonidoMordisco.cloneNode();
     mordisco.play();
   } else if (clicksPastel === 5) {
     tortaWrapper.style.clipPath = "inset(0 0 0 100%)";
-    crearMigas(30);
     const mordisco = sonidoMordisco.cloneNode();
     mordisco.play();
   }
 });
-
-const migasCanvas = document.querySelector(".migas-canvas");
-migasCanvas.width = 520;
-migasCanvas.height = 100;
-const ctxMigas = migasCanvas.getContext("2d");
-let migas = [];
-
-const coloresMigas = ["#FDE8C8", "#ff9393", "#ff5959", "#FDE8C8"];
-
-function crearMigas(cantidad) {
-  for (let i = 0; i < cantidad; i++) {
-    migas.push({
-      x: Math.random() * 274 + 120, // ancho del pastel
-      y: 0,
-      r: Math.random() * 4 + 2,
-      color: coloresMigas[Math.floor(Math.random() * coloresMigas.length)],
-      velocidadY: Math.random() * 3 + 2,
-      velocidadX: (Math.random() - 0.5) * 3,
-      rebotando: true,
-    });
-  }
-}
-
-function animarMigas() {
-  ctxMigas.clearRect(0, 0, 520, 100);
-
-  migas.forEach((m) => {
-    ctxMigas.beginPath();
-    ctxMigas.arc(m.x, m.y, m.r, 0, Math.PI * 2);
-    ctxMigas.fillStyle = m.color;
-    ctxMigas.fill();
-
-    if (m.rebotando) {
-      m.y += m.velocidadY;
-      m.x += m.velocidadX;
-
-      if (m.y >= 90) {
-        m.y = 90;
-        m.rebotando = false;
-      }
-    }
-  });
-
-  requestAnimationFrame(animarMigas);
-}
-
-animarMigas();
