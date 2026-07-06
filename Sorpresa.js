@@ -48,7 +48,9 @@ llama.addEventListener("click", (e) => {
     cancion.play();
     overlay.classList.add("hidden");
     document.documentElement.style.overflowY = "auto";
-    document.documentElement.style.maxHeight = "3000px";
+    document.body.style.maxHeight = window.innerWidth <= 400 ? "1500px" :
+                                    window.innerWidth <= 768 ? "2000px" : "3000px";
+    document.body.style.overflow = "hidden auto";
   }, 1000);
 });
 
