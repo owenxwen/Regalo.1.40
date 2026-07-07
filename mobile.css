@@ -16,7 +16,7 @@
 
 .soporte::before {
   width: 100px;
-  height: 2500px;
+  height: 1500px;
   left: 50%;
   transform: translateX(-50%);
   top: 18px;
@@ -24,7 +24,7 @@
 
 .soporte::after {
   width: 95px;
-  height: 2500px;
+  height: 1500px;
   left: 85px;
 }
 
@@ -135,7 +135,7 @@
 }
 
 .galeria-marcos {
-  height: 1400px;
+  height: 1500px;
   overflow: hidden;
 }
 
@@ -163,6 +163,12 @@
 /* Altura máxima mobile */
 html {
   max-height: 1500px;
+}
+
+body {
+  max-height: 2000px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* Pantallas más pequeñas */
