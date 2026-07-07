@@ -2,10 +2,15 @@
 * {
   -webkit-tap-highlight-color: transparent;
   outline: none;
-  user-select: none;         /* Evita seleccionar texto al tocar */
-  -webkit-user-select: none; /* Para Safari/iOS */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Contenedor general */
+body {
+  padding-top: 20vh;
 }
 
 /* Mesa */
@@ -16,7 +21,7 @@
 
 .soporte::before {
   width: 100px;
-  height: 1500px;
+  height: 800px;
   left: 50%;
   transform: translateX(-50%);
   top: 18px;
@@ -24,17 +29,17 @@
 
 .soporte::after {
   width: 95px;
-  height: 1500px;
+  height: 800px;
   left: 85px;
 }
 
-/*Mensaje*/
+/* Mensaje */
 .happy-birthday {
   top: -100%;
   left: 140px;
 }
 
-/*Objetos de la mesa*/
+/* Objetos de la mesa */
 .portaretrato {
   transform: scale(0.75);
   left: 65px;
@@ -63,6 +68,56 @@
   left: 145px;
 }
 
+.llama {
+  bottom: 160px;
+  left: 142px;
+}
+
+/* Carta */
+.carta {
+  animation: none;
+  transform: scale(0.8);
+  transform-origin: center center;
+  margin: 0 auto;
+}
+
+/* Banderetas */
+.bandereta {
+  width: 20px;
+  height: 28px;
+}
+
+/* Galería */
+.galeria-marcos {
+  height: 1450px;
+  overflow: hidden;
+}
+
+/* Marcos */
+.marco-grande {
+  width: 100px;
+  height: 100px;
+}
+
+.polaroid {
+  padding: 6px 6px 20px 6px;
+}
+
+.foto-1 { left: 10px;  top: 50px; }
+.foto-2 { right: 10px; top: 200px; }
+.foto-3 { left: 10px;  top: 350px; }
+.foto-4 { right: 10px; top: 500px; }
+.foto-5 { left: 10px;  top: 650px; }
+.foto-6 { right: 10px; top: 800px; }
+.foto-7 { left: 10px;  top: 950px; }
+.foto-8 { right: 10px; top: 1100px; }
+.foto-9 { left: 10px;  top: 1250px; }
+
+/* Base de la mesa */
+.base-mesa {
+  margin-top: 0;
+}
+
 /* Celular Vertical */
 @media only screen and (orientation: portrait) {
   .vela-overlay {
@@ -84,8 +139,23 @@
     bottom: 99px;
     left: 145px;
   }
+
+  .galeria-marcos {
+    height: 800px;
+  }
+
+  .foto-1 { left: 10px;  top: 30px; }
+  .foto-2 { right: 10px; top: 130px; }
+  .foto-3 { left: 10px;  top: 230px; }
+  .foto-4 { right: 10px; top: 330px; }
+  .foto-5 { left: 10px;  top: 430px; }
+  .foto-6 { right: 10px; top: 530px; }
+  .foto-7 { left: 10px;  top: 630px; }
+  .foto-8 { right: 10px; top: 730px; }
+  .foto-9 { left: 10px;  top: 50px; }
 }
 
+/* Tablets */
 @media only screen and (min-width: 400px) and (max-width: 768px) and (orientation: portrait) {
   .vela-overlay {
     transform: scale(0.75);
@@ -98,80 +168,30 @@
     height: 160px;
   }
 
-  .foto-1, .foto-3, .foto-5, .foto-7, .foto-9 {
-    left: 20px;
-  }
-
-  .foto-2, .foto-4, .foto-6, .foto-8 {
-    right: 20px;
-  }
-
   .polaroid {
-  padding: 7px 7px 25px 7px;
+    padding: 7px 7px 25px 7px;
   }
 
   .torta-wrapper {
-  clip-path: inset(0 0 0 0%);
+    clip-path: inset(0 0 0 0%);
   }
 
+  .galeria-marcos {
+    height: 1800px;
+  }
+
+  .foto-1 { left: 20px;  top: 50px; }
+  .foto-2 { right: 20px; top: 250px; }
+  .foto-3 { left: 20px;  top: 450px; }
+  .foto-4 { right: 20px; top: 650px; }
+  .foto-5 { left: 20px;  top: 850px; }
+  .foto-6 { right: 20px; top: 1050px; }
+  .foto-7 { left: 20px;  top: 1250px; }
+  .foto-8 { right: 20px; top: 1450px; }
+  .foto-9 { left: 20px;  top: 1650px; }
 }
 
-.llama {
-  bottom: 160px;
-  left: 142px;
-}
-
-.carta {
-  animation: none;
-  transform: scale(0.8);
-  transform-origin: center center;
-  margin: 0 auto;
-}
-
-/* Banderetas mobile */
-.bandereta {
-  width: 20px;
-  height: 28px;
-}
-
-.galeria-marcos {
-  height: 1500px;
-  overflow: hidden;
-}
-
-/* Marcos grandes mobile */
-.marco-grande {
-  width: 100px;
-  height: 100px;
-}
-
-/* Polaroid mobile */
-.polaroid {
-  padding: 6px 6px 20px 6px;
-}
-
-.foto-1 { left: 80px;  top: 150px; }
-.foto-2 { right: 80px; top: 300px; }
-.foto-3 { left: 80px;  top: 450px; }
-.foto-4 { right: 80px; top: 600px; }
-.foto-5 { left: 80px;  top: 750px; }
-.foto-6 { right: 80px; top: 900px; }
-.foto-7 { left: 80px;  top: 1050px; }
-.foto-8 { right: 80px; top: 1200px; }
-.foto-9 { left: 80px;  top: 1350px; }
-
-/* Altura máxima mobile */
-html {
-  max-height: 1500px;
-}
-
-body {
-  max-height: 2000px;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-/* Pantallas más pequeñas */
+/* Pantallas muy pequeñas */
 @media only screen and (max-width: 400px) {
 
   .soporte {
@@ -185,8 +205,8 @@ body {
 
   .happy-birthday {
     font-size: 36px;
-    top: -100%;
-    left: 130px; 
+    top: -80%;
+    left: 155px;
   }
 
   .portaretrato {
@@ -202,7 +222,7 @@ body {
   }
 
   .torta-wrapper {
-  clip-path: inset(0 0 0 0%);
+    clip-path: inset(0 0 0 0%);
   }
 
   .caja {
@@ -225,10 +245,4 @@ body {
   .carta {
     transform: scale(0.7);
   }
-
-  .happy-birthday {
-    top: -80%;
-    left: 155px;
-  }
 }
-
