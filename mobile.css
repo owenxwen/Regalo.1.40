@@ -153,43 +153,7 @@ body {
   .foto-6 { right: 10px; top: 530px; }
   .foto-7 { left: 10px;  top: 630px; }
   .foto-8 { right: 10px; top: 730px; }
-  .foto-9 { left: 10px;  top: 50px; }
-}
-
-/* Tablets */
-@media only screen and (min-width: 400px) and (max-width: 768px) and (orientation: portrait) {
-  .vela-overlay {
-    transform: scale(0.75);
-    bottom: 99px;
-    left: 145px;
-  }
-
-  .marco-grande {
-    width: 160px;
-    height: 160px;
-  }
-
-  .polaroid {
-    padding: 7px 7px 25px 7px;
-  }
-
-  .torta-wrapper {
-    clip-path: inset(0 0 0 0%);
-  }
-
-  .galeria-marcos {
-    height: 1800px;
-  }
-
-  .foto-1 { left: 20px;  top: 50px; }
-  .foto-2 { right: 20px; top: 250px; }
-  .foto-3 { left: 20px;  top: 450px; }
-  .foto-4 { right: 20px; top: 650px; }
-  .foto-5 { left: 20px;  top: 850px; }
-  .foto-6 { right: 20px; top: 1050px; }
-  .foto-7 { left: 20px;  top: 1250px; }
-  .foto-8 { right: 20px; top: 1450px; }
-  .foto-9 { left: 20px;  top: 1650px; }
+  .foto-9 { left: 10px;  top: 830px; }
 }
 
 /* Pantallas muy pequeñas */

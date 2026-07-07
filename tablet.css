@@ -1,0 +1,125 @@
+/*Evitamos el Resaltado Azul*/
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Contenedor general */
+body {
+  padding-top: 25vh;
+}
+
+/* Mesa */
+.soporte {
+  width: 450px;
+  left: -6px;
+}
+
+.soporte::before {
+  width: 100px;
+  height: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18px;
+}
+
+.soporte::after {
+  width: 95px;
+  height: 1000px;
+  left: 85px;
+}
+
+/* Mensaje */
+.happy-birthday {
+  top: -120%;
+  left: 140px;
+}
+
+/* Objetos de la mesa */
+.portaretrato {
+  transform: scale(0.9);
+  left: 40px;
+  bottom: -5px;
+}
+
+.torta {
+  transform: scale(0.9);
+  left: 10px;
+  bottom: -10px;
+}
+
+.torta-wrapper {
+  clip-path: inset(0 0 0 0%);
+}
+
+.caja {
+  transform: scale(0.9);
+  left: -40px;
+  bottom: -15px;
+}
+
+.vela {
+  transform: scale(0.9);
+  bottom: 126px;
+  left: 130px;
+}
+
+.vela-overlay {
+  transform: scale(0.9);
+  bottom: 126px;
+  left: 130px;
+}
+
+.llama {
+  bottom: 200px;
+  left: 127px;
+}
+
+/* Carta */
+.carta {
+  animation: none;
+  transform: scale(0.9);
+  transform-origin: center center;
+  margin: 0 auto;
+}
+
+/* Banderetas */
+.bandereta {
+  width: 25px;
+  height: 33px;
+}
+
+/* Galería */
+.galeria-marcos {
+  height: 1850px;
+  overflow: hidden;
+}
+
+/* Marcos */
+.marco-grande {
+  width: 160px;
+  height: 160px;
+}
+
+.polaroid {
+  padding: 7px 7px 25px 7px;
+}
+
+.foto-1 { left: 20px;  top: 50px; }
+.foto-2 { right: 20px; top: 250px; }
+.foto-3 { left: 20px;  top: 450px; }
+.foto-4 { right: 20px; top: 650px; }
+.foto-5 { left: 20px;  top: 850px; }
+.foto-6 { right: 20px; top: 1050px; }
+.foto-7 { left: 20px;  top: 1250px; }
+.foto-8 { right: 20px; top: 1450px; }
+.foto-9 { left: 20px;  top: 1650px; }
+
+/* Base de la mesa */
+.base-mesa {
+  margin-top: 0;
+}
