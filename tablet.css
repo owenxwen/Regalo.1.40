@@ -109,15 +109,15 @@ body {
   padding: 7px 7px 25px 7px;
 }
 
-.foto-1 { left: 20px;  top: 50px; }
-.foto-2 { right: 20px; top: 250px; }
-.foto-3 { left: 20px;  top: 450px; }
-.foto-4 { right: 20px; top: 650px; }
-.foto-5 { left: 20px;  top: 850px; }
-.foto-6 { right: 20px; top: 1050px; }
-.foto-7 { left: 20px;  top: 1250px; }
-.foto-8 { right: 20px; top: 1450px; }
-.foto-9 { left: 20px;  top: 1650px; }
+.foto-1 { left: 20px;  top: 60px; }
+.foto-2 { right: 20px; top: 210px; }
+.foto-3 { left: 20px;  top: 460px; }
+.foto-4 { right: 20px; top: 610px; }
+.foto-5 { left: 20px;  top: 860px; }
+.foto-6 { right: 20px; top: 1010px; }
+.foto-7 { left: 20px;  top: 1260px; }
+.foto-8 { right: 20px; top: 1410px; }
+.foto-9 { left: 20px;  top: 1660px; }
 
 /* Base de la mesa */
 .base-mesa {
