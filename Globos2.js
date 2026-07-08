@@ -39,7 +39,7 @@ function crearGlobos2() {
       radioX: Math.random() * 15 + 20,
       radioY: Math.random() * 15 + 25,
       color: coloresGlobos2[Math.floor(Math.random() * coloresGlobos2.length)],
-      velocidadY: Math.random() * 2.0 + 1.5,
+      velocidadY: Math.random() * 1.5 + 0.5,
       velocidadX: (Math.random() - 0.5) * 0.5,
       hiloLargo: Math.random() * 30 + 40,
     });
