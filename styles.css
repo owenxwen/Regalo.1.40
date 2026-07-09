@@ -532,7 +532,7 @@ body {
     transform: translateX(-50%);
     font-family: 'Pacifico', cursive;
     font-size: 40px;
-    color: #ff9f8a;; 
+    color: #ffd3a6;; 
     user-select: none;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
     animation: flotar 2s ease-in-out infinite,
@@ -682,10 +682,16 @@ body {
 
 @keyframes brillo {
   from, to {
-    text-shadow: 0 0 3px #fff, 0 0 6px #ffb347, 0 0 9px #ffb347;
+    text-shadow:
+      0 0 2px rgba(255, 255, 255, 0.5),
+      0 0 4px rgba(255, 179, 71, 0.45),
+      0 0 7px rgba(255, 179, 71, 0.35);
   }
   50% {
-    text-shadow: 0 0 6px #fff, 0 0 12px #ffb347, 0 0 18px #ffb347;
+    text-shadow:
+      0 0 3px rgba(255, 255, 255, 0.55),
+      0 0 7px rgba(255, 179, 71, 0.5),
+      0 0 10px rgba(255, 179, 71, 0.4);
   }
 }
 
@@ -768,15 +774,21 @@ body {
   font-family: 'Pacifico', cursive;
   font-size: 20px;
   line-height: 1.25;
-  color: #ff9f8a;
+  color: #ffd3a6;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.18);
   z-index: 2;
 }
 
 .texto-marco::first-letter {
   font-size: 1.8em;
-  color: #ff9f8a;
+  color: #ffd3a6;
   line-height: 1;
+}
+
+.texto-9::first-letter {
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
 }
 
 /* Textos reflejados: fotos izquierda -> texto derecha, fotos derecha -> texto izquierda */
@@ -819,7 +831,7 @@ body {
   transform: rotate(-15deg);
   font-family: 'Pacifico', cursive;
   font-size: 38px;
-  color: #ffb347;
+  color: #ffd3a6;
   text-shadow: 
     -1px -1px 0 #000,
     -1px 1px  0 #000,
