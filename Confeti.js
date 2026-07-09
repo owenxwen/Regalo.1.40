@@ -49,7 +49,7 @@ function crearConfeti() {
 // 3. Dibujar y Mover Confeti
 //
 function animarConfeti() {
-  ctxConfeti.fillStyle = "rgba(240, 255, 240, 1)"; // verde cremita
+  ctxConfeti.fillStyle = "#adebb3"; // verde cremita
   ctxConfeti.fillRect(0, 0, ancho, alto);
 
   for (let i = 0; i < confetis.length; i++) {
