@@ -766,14 +766,14 @@ body {
   font-family: 'Pacifico', cursive;
   font-size: 24px;
   line-height: 1.25;
-  color: #ff9d3d;
+  color: #ffb347;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.18);
   z-index: 2;
 }
 
 .texto-marco::first-letter {
   font-size: 1.8em;
-  color: #ff9d3d;
+  color: #ffb347;
   line-height: 1;
 }
 

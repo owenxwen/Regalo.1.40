@@ -119,15 +119,15 @@ body {
   line-height: 1.2;
 }
 
-.texto-1 { left: 230px; top: 85px; text-align: left; }
-.texto-2 { right: 230px; top: 235px; text-align: right; }
-.texto-3 { left: 230px; top: 385px; text-align: left; }
-.texto-4 { right: 230px; top: 535px; text-align: right; }
-.texto-5 { left: 230px; top: 685px; text-align: left; }
-.texto-6 { right: 230px; top: 835px; text-align: right; }
-.texto-7 { left: 230px; top: 975px; text-align: left; }
-.texto-8 { right: 230px; top: 1135px; text-align: right; }
-.texto-9 { left: 230px; top: 1285px; text-align: left; }
+.texto-1 { left: 300px; top: 55px; text-align: left; }
+.texto-2 { right: 300px; top: 205px; text-align: right; }
+.texto-3 { left: 300px; top: 355px; text-align: left; }
+.texto-4 { right: 300px; top: 505px; text-align: right; }
+.texto-5 { left: 300px; top: 655px; text-align: left; }
+.texto-6 { right: 300px; top: 805px; text-align: right; }
+.texto-7 { left: 300px; top: 955px; text-align: left; }
+.texto-8 { right: 300px; top: 1105px; text-align: right; }
+.texto-9 { left: 300px; top: 1255px; text-align: left; }
 
 /* Base de la mesa */
 .base-mesa {
